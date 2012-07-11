@@ -44,10 +44,10 @@ var getToTheAirport = function (driver, distance) {
 
 // Array Function
 var flight = function (airports, stops) {
-	for (var i = stops; i > 0; i--) {
-		console.log("I fly from " + airports[i] + " to " + airports[i]);
+	for (var i = stops; i < 3; i++) {
+		console.log("I fly from " + airports[i] + " to " + airports[i+1] + ".");
 	};
-	return "I have finally reached " + airports[i];
+	return "I have finally reached " + airports[i] + ".";
 };
 
 
@@ -57,7 +57,7 @@ var flight = function (airports, stops) {
 console.log(planeDelayed(true, false));
 console.log(luggage(22));
 console.log(getToTheAirport("My parents", "6 miles"));
-console.log(flight(airports, 3));
+console.log(flight(airports, 0));
 
 
 
