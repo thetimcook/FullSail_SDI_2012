@@ -16,7 +16,7 @@ if (passenger === "Tim Cook") {
 	console.log(passenger + " will be flying to " + airports[2] + " from " + airports[0]);
 	} else { 
 	console.log("Tim Cook will not be traveling today");
-}; // End of Procedure
+};// End of Procedure
 
 // Boolean Function
 var planeDelayed = function (onTime, Delayed) {
@@ -33,11 +33,16 @@ var luggage = function (weight) {
 		console.log("I put some more clothes in my bag making the weight " + weight + " pounds");
 		weight ++;
 	};
-	return"I finally end up with " + weight + " pounds of clothes in my luggage."
+	return"I finally end up with " + weight + " pounds of clothes in my luggage.";
 };// End Number Function
 
 // String Function
+var getToTheAirport = function (driver, distance) {
+	var rideToAirport = driver + " will take me to the airport which is " + distance + " away.";
+	return rideToAirport;
+};// End String Funtion
 
+// Array Function
 
 
 
@@ -48,4 +53,5 @@ var luggage = function (weight) {
 
 console.log(planeDelayed(true, false));
 console.log(luggage(22));
+console.log(getToTheAirport("My parents", "6 miles"));
 
