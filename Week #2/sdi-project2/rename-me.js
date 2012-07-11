@@ -9,11 +9,11 @@
 // Variables
 var passenger = "Tim Cook",
 	numberOfBags = 2,
-	airports = ["Springfield-Branson Airport", "Hartsfield-Jackson Atlanta Airport", "Orlando Sanford Airport"];
+	airports = ["Springfield-Branson Airport", "Dallas-Fort Worth Airport", "Hartsfield-Jackson Atlanta Airport", "Orlando Sanford Airport"];
 
 // Procedure
 if (passenger === "Tim Cook") {
-	console.log(passenger + " will be flying to " + airports[2] + " from " + airports[0]);
+	console.log(passenger + " will be flying to " + airports[3] + " from " + airports[0]);
 	} else { 
 	console.log("Tim Cook will not be traveling today");
 };// End of Procedure
@@ -33,7 +33,7 @@ var luggage = function (weight) {
 		console.log("I put some more clothes in my bag making the weight " + weight + " pounds");
 		weight ++;
 	};
-	return"I finally end up with " + weight + " pounds of clothes in my luggage.";
+	return "I finally end up with " + weight + " pounds of clothes in my luggage.";
 };// End Number Function
 
 // String Function
@@ -43,9 +43,12 @@ var getToTheAirport = function (driver, distance) {
 };// End String Funtion
 
 // Array Function
-
-
-
+var flight = function (airports, stops) {
+	for (var i = stops; i > 0; i--) {
+		console.log("I fly from " + airports[i] + " to " + airports[i]);
+	};
+	return "I have finally reached " + airports[i];
+};
 
 
 
@@ -54,4 +57,8 @@ var getToTheAirport = function (driver, distance) {
 console.log(planeDelayed(true, false));
 console.log(luggage(22));
 console.log(getToTheAirport("My parents", "6 miles"));
+console.log(flight(airports, 3));
+
+
+
 
