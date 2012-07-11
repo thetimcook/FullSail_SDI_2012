@@ -28,6 +28,15 @@ var planeDelayed = function (onTime, Delayed) {
 };// End Boolean Function
 
 // Number Function
+var luggage = function (weight) {
+	while (weight < 30) {
+		console.log("I put some more clothes in my bag making the weight " + weight + " pounds");
+		weight ++;
+	};
+	return"I finally end up with " + weight + " pounds of clothes in my luggage."
+};// End Number Function
+
+// String Function
 
 
 
@@ -35,5 +44,8 @@ var planeDelayed = function (onTime, Delayed) {
 
 
 
+// Returned Values / Output 
 
 console.log(planeDelayed(true, false));
+console.log(luggage(22));
+
