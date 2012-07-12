@@ -47,7 +47,7 @@ var getToTheAirport = function (driver, distance) {
 // Array Function
 var flight = function (airports, stops) {
 	for (var i = stops; i < 3; i++) {
-		console.log("I fly from " + airports[i] + " to " + airports[i+1] + ".");
+		console.log("I fly from " + airports[i] + " to " + airports[i+1] + ". Flight " + (i+1) + " finished.");
 	};
 	return "I have finally reached " + airports[i] + ".";
 };
