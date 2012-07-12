@@ -12,15 +12,17 @@ var passenger = "Tim Cook",
 	airports = ["Springfield-Branson Airport", "Dallas-Fort Worth Airport", "Hartsfield-Jackson Atlanta Airport", "Orlando Sanford Airport"];
 
 // Procedure
-if (passenger === "Tim Cook") {
-	console.log(passenger + " will be flying to " + airports[3] + " from " + airports[0]);
+var trip = function (passenger) {
+	if (passenger === "Tim Cook") {
+		console.log(passenger + " will be flying to " + airports[3] + " from " + airports[0]);
 	} else { 
-	console.log("Tim Cook will not be traveling today");
+		console.log("Tim Cook will not be traveling today");
+	};
 };// End of Procedure
 
 // Boolean Function
 var planeDelayed = function (onTime, Delayed) {
-	if ((onTime === true) + (Delayed === false)) {
+	if ((onTime === true) && (Delayed === false)) {
 		return"It is " + onTime + " that the plane is going to be on time today.";
 	} else {
 		return"It is " + Delayed + " that the plane is going to be on time.";
@@ -50,14 +52,14 @@ var flight = function (airports, stops) {
 	return "I have finally reached " + airports[i] + ".";
 };
 
-
-
-// Returned Values / Output 
-
+// Returned Values / Outputs
+console.log(trip(passenger));
 console.log(planeDelayed(true, false));
 console.log(luggage(22));
 console.log(getToTheAirport("My parents", "6 miles"));
 console.log(flight(airports, 0));
+
+
 
 
 
