@@ -7,13 +7,13 @@
 
 // Global Variables
 var passengers = ["Tim Cook", "Dale Cook", "Tammy Cook"];
-	
+	nubmerOfpassengers = passengers.length
 
 
 
 // Procedure
 var trip = function (passengers) {
-	if (passengers.length > 0) {
+	if (nubmerOfpassengers > 0) {
 		while (passengers.length > 0) {
 		console.log(passengers[passengers.length - 1] + " gets ready for the flight.");
 		passengers.length --;
@@ -23,5 +23,4 @@ var trip = function (passengers) {
 	};
 };// End of Procedure
 
-
-console.log(trip(passengers));
+trip(passengers);
