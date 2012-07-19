@@ -44,27 +44,27 @@ var json2 = {
 			"terminal": "A2",
 			"onTime": true,
 			"departure": "Springfield-Branson Airport",
-			"departureTime": 8,
+			"departureTime": "8:00am",
 			"arrival": "Dallas-Fort Worth Airport",
-			"arrivalTime": 10
+			"arrivalTime": "10:00am"
 		},
 		{
 			"flight": "676",
 			"terminal": "B6",
 			"onTime": true,
 			"departure": "Dallas-Fort Worth Airport",
-			"departureTime": 12,
+			"departureTime": "12:00pm",
 			"arrival": "Hartsfield-Jackson Atlanta Airport",
-			"arrivalTime": 13.5
+			"arrivalTime": "1:30pm"
 		},
 		{
 			"flight": "367",
 			"terminal": "A12",
 			"onTime": true,
 			"departure": "Hartsfield-Jackson Atlanta Airport",
-			"departureTime": 14.5,
+			"departureTime": "2:30pm",
 			"arrival": "Orlando Sanford Airport",
-			"arrivalTime": 16
+			"arrivalTime": "4:00pm"
 		}
 	
 	]
