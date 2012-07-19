@@ -35,7 +35,6 @@ var flightDelayed = function (json) {
 	return delayed;
 };//end Mutator Function
 
-
 // Function with JSON data
 var checkFlightStatus = function (json) {
 	for (var i = 0; i < json.myFlights.length; i++){
@@ -45,19 +44,28 @@ var checkFlightStatus = function (json) {
 	return " have now arrived in Orlando and can now begin our vacation!";
 };// end function 
 
-// Number Function
+// Boolean Function
 var food = function (hungry) {
 	var chinese = restaurants.chinese;
 	if (hungry === true) {
 		return chinese;
 	} else {
-		return "not hungry";
+		return "no restaurants";
 	};
-};
+};// end Boolean Function
+
+// Number Function
+var hotelDistance = function (distance) {
+	var maxDistance = 3;
+		while (distance > maxDistance) {
+		console.log("Finding a hotel closer than " + distance + " miles away.");
+		distance--;
+		};
+	return distance;
+}; // end number function
 
 
 // Main Code
-
 trip(passengers);
 
 console.log( "It is " + !flightDelayed(json2) + " that my last flight is delayed.");
@@ -65,11 +73,12 @@ console.log( "It is " + !flightDelayed(json2) + " that my last flight is delayed
 console.log( passengers + checkFlightStatus(json2));
 
 if (hungry === true) {
-	console.log("Because it is " + hungry + " that we are hungry." + " We will eat at either, " + food(hungry) + ".");
+	console.log("Because it is " + hungry + " that we are hungry." + " We will eat at one of " + food(hungry) + ".");
 } else {
 	console.log("We will not eat because it is " + hungry + " that we are hungry.");
 };
 
+console.log("The Hotel is " + hotelDistance(9) + " miles away, so we have time to get some dessert.");
 
 
 
