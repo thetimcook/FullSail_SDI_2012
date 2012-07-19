@@ -7,7 +7,12 @@
 
 // Global Variables
 var passengers = [" Tim Cook", " Dale Cook", " Tammy Cook"];
-
+var restaurants = {
+	"mexican": ["Azteca D'Oro", " Agave Azul", " Gringos Lacos"],
+	"american": ["Earl of Sandwich", " Mellow Mushroom", " Dextar's"],
+	"chinese": ["Nona Sushi", " P.F. Chang's", " China One"]
+};
+var hungry = true;
 
 // Procedure
 var trip = function (passengers) {
@@ -27,21 +32,8 @@ var flightDelayed = function (json) {
 	var flight = json.myFlights[2];
 	var delayed = flight.onTime;
 	var delayed = false;
-	return delayed
+	return delayed;
 };//end Mutator Function
-
-// Function
-var onTime = function () {
-	var flight = json.myFlights[2]
-	var newTime = flight.departureTime
-	var newTime2 = flight.arrivalTime
-	if (delayed = true) {
-		return
-	} else { 
-		var newTime = "3:30pm";
-		var newTime2 = "5:00pm";
-	};
-};
 
 
 // Function with JSON data
@@ -50,17 +42,38 @@ var checkFlightStatus = function (json) {
 		var flight = json.myFlights[i];
 		console.log( "We will be fling out of " + flight.departure + " at " + flight.departureTime + ", and arriving in " + flight.arrival + " at " + flight.arrivalTime + ".");
 	};
-	return" have now arrived in Orlando and can now begin our vacation!"
+	return " have now arrived in Orlando and can now begin our vacation!";
 };// end function 
 
+// Number Function
+var food = function (hungry) {
+	var chinese = restaurants.chinese;
+	if (hungry === true) {
+		return chinese;
+	} else {
+		return "not hungry";
+	};
+};
 
 
-
-// Main Codef
+// Main Code
 
 trip(passengers);
 
-console.log(flightDelayed(json2));
+console.log( "It is " + !flightDelayed(json2) + " that my last flight is delayed.");
 
 console.log( passengers + checkFlightStatus(json2));
+
+if (hungry === true) {
+	console.log("Because it is " + hungry + " that we are hungry." + " We will eat at either, " + food(hungry) + ".");
+} else {
+	console.log("We will not eat because it is " + hungry + " that we are hungry.");
+};
+
+
+
+
+
+
+
 
