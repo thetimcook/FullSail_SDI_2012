@@ -16,7 +16,7 @@ var hungry = true;
 
 // Procedure
 var trip = function (passengers) {
-	var nubmerOfPassengers = passengers.length
+	var nubmerOfPassengers = passengers.length;
 	if (nubmerOfPassengers > 0) {
 		while (nubmerOfPassengers > 0) {
 		console.log(passengers[nubmerOfPassengers - 1] + " gets ready for the flight.");
