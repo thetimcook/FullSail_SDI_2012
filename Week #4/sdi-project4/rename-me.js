@@ -6,7 +6,7 @@
 */
 
 
-// String Problem #1
+// String Problem #1:  Does a string follow a 123-456-7890 pattern like a phone number?
 var number = "000-000-0000"
 
 var checkNumber = function (number) {
@@ -22,7 +22,7 @@ var checkNumber = function (number) {
 console.log(checkNumber(number));
 // End #1
 
-// String Problem #2
+// String Problem #2:  Does a string follow an aaa@bbb.ccc pattern like an email address?
 var mail = "namename@mail.com"
 
 var checkMail = function (mail) {
@@ -37,7 +37,7 @@ var checkMail = function (mail) {
 console.log(checkMail(mail));
 // End #2
 
-// String Problem #3
+// String Problem #3:  Is the string a URL? (Does it start with http: or https:?)
 var url = "http://www.theverge.com"
 
 var checkUrl = function (url) {
@@ -49,6 +49,34 @@ var checkUrl = function (url) {
 	};
 };
 console.log(checkUrl(url));
+// End #3
+
+// String Problem #4
+
+
+// End #4
+
+// String Problem $5
+
+
+// End #5
+
+// Number Problem #1
+var money = 2.1
+
+var changeMoney = function(money) {
+	var output = Math.round(money);
+	return output;
+};
+console.log(changeMoney(money));
+// End #1
+
+// Nubmer Problem #2
+
+
+// End #2
+
+
 
 
 
