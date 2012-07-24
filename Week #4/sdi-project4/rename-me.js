@@ -65,13 +65,18 @@ var library = function () {
 	// End #1
 	
 	// Nubmer Problem #2:  Fuzzy-match a number: is the number above or below a number within a certain percent?
-	var percentage = .5
+/*	var percentage = .5
 	var checkPercentage = function (percent) {
     	percentsavings = ((percent - percentage) / percent) * 100;
     	console.log(checkPercentage("results").innerHTML = Math.round(percentsavings*100)/100);
 	};
 	console.log(checkPercentage(.8));
-	// End #2
+*/	// End #2
+	
+	// Number Problem #3:  Find the number of hours or days difference between two dates.
+	
+	
+	// End #3
 
 };
 console.log(library());
