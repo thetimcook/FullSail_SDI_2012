@@ -56,7 +56,7 @@ var library = function () {
 	
 	// End #5
 	
-	// Number Problem #1
+	// Number Problem #1:  Format a number to use a specific number of decimal places, as for money: 2.1 - 2.10
 	var changeMoney = function(money) {
 		var output = money.toFixed(2);
 		return output; 
@@ -64,12 +64,20 @@ var library = function () {
 	console.log(changeMoney(2.1));
 	// End #1
 	
-	// Nubmer Problem #2
-	
-	
+	// Nubmer Problem #2:  Fuzzy-match a number: is the number above or below a number within a certain percent?
+	var percentage = .5
+	var checkPercentage = function (percent) {
+    	percentsavings = ((percent - percentage) / percent) * 100;
+    	console.log(checkPercentage("results").innerHTML = Math.round(percentsavings*100)/100);
+	};
+	console.log(checkPercentage(.8));
 	// End #2
 
 };
 console.log(library());
+
+
+
+
 
 
