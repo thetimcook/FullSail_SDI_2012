@@ -69,20 +69,27 @@ var library = function () {
 	
 	// Nubmer Problem #2:  Fuzzy-match a number: is the number above or below a number within a certain percent?
 	Number.prototype.isFuzzy = function(compare, percent) {
-		var dev = compare*(percent/100), n= +this;
+		var dev = compare*(percent/100), n = +this;
 		return n >= compare-dev && n <= compare+dev;
     };
-    var n = 73;
-    console.log(n.isFuzzy(25,75));
+    var n = 40;
+    console.log(n.isFuzzy(25,75));// a range from 6.25 - 43.75
 	// End #2
 	
 	// Number Problem #3:  Find the number of hours or days difference between two dates.
 	
 	
 	// End #3
+	
+	// Number Problem #4
+	var numberFromString = function (number) {
+		return parseFloat(number);
+	};
+	console.log(numberFromString("42"));
+	// End #4
 
 };
-console.log(library());
+library();
 
 
 
