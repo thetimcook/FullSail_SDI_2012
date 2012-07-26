@@ -112,8 +112,12 @@ var library = function () {
 // End #4
 
 // Array Problem #1
-	
-
+/*	var smallestValue = function (numbers, value) {
+		newValue = Math.min(numbers);
+		return  newValue;
+	};
+	console.log(smallestValue([1,2,3,4,5,6,7,8,9,10], 4));
+*/
 // End #1
 
 // Array Problem #2
