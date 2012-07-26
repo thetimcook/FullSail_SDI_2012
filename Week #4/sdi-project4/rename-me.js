@@ -46,9 +46,12 @@ var library = function () {
 	
 // String Problem #4
 	var capWord = function (words) {
-		
+		var wordList = words.split(" ");
+		for (i = 0; i < wordList.length; i++) {
+			console.log(wordList[i].charAt(0).toUpperCase() + wordList[i].slice(1));
+		};
 	};
-	console.log(capWord("john,mark,jason,michael,daniel"));
+	capWord("john mark jason michael daniel");
 // End #4
 	
 // String Problem #5:  Replace "," with "/" in a string.
